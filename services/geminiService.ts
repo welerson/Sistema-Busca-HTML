@@ -1,14 +1,7 @@
-
 import { GoogleGenAI } from "@google/genai";
 import { ResultData } from '../types';
 
-const API_KEY = process.env.API_KEY;
-
-if (!API_KEY) {
-    throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 const PROMPT_TEMPLATE = `
 Você é um agente especialista em extração de dados. Sua tarefa é analisar o código-fonte HTML fornecido e extrair as informações solicitadas pelo usuário.
