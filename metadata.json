@@ -1,0 +1,5 @@
+{
+  "name": "Analisador de HTML com IA",
+  "description": "Um aplicativo da web que usa o Gemini para extrair informações estruturadas de código-fonte HTML bruto com base em consultas em linguagem natural.",
+  "requestFramePermissions": []
+}
